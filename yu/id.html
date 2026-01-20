@@ -32,7 +32,7 @@
 
         /* Section Spacing and Borders */
         .section {
-            padding: 60px 20px;
+            padding: 40px 20px;
             border-bottom: 1px solid #ccc;
         }
 
@@ -40,8 +40,22 @@
             font-size: 24px;
         }
 
+        /* 画像が枠からはみ出ないように設定 */
+        .logo-section img {
+            max-width: 200px; /* ロゴの最大幅 */
+            height: auto;
+        }
+
         .content-section {
             font-size: 20px;
+        }
+
+        /* メイン画像のサイズ調整 */
+        .content-section img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px; 
         }
 
         /* Footer Style */
@@ -65,11 +79,12 @@
         </header>
 
         <section class="section logo-section">
-            ロゴ
+            <img src="logo.png" alt="LOTTE.jpg">
         </section>
 
         <section class="section content-section">
-            好きな野球チーム
+            <div>好きな野球チーム</div>
+            <img src="baseball-team.jpg" alt="MARINZU.jpg">
         </section>
 
         <footer class="footer">
