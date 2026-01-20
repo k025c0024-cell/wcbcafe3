@@ -1,0 +1,116 @@
+/* 基本設定 */
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.logo-area {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+}
+
+/* メインコンテンツ */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.section-box {
+    background: #fff;
+    border: 2px solid #000;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    margin: 0;
+    padding: 10px 0;
+    background: #eee;
+    font-size: 18px;
+}
+
+/* グリッドレイアウト（選手・球場飯） */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.item {
+    width: 45%; /* 2列に見せるための設定 */
+    margin-bottom: 20px;
+}
+
+/* 左列と右列の配置（ワイヤーフレームの再現） */
+.item:nth-child(odd) {
+    margin-right: 10%;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 120px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item p {
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 5px;
+    background: #fff;
+}
+
+/* 球場情報エリア */
+.map-area, .access-area {
+    height: 150px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+}
+
+/* フッター情報（各セクション内） */
+.footer-info-mini {
+    text-align: center;
+    padding: 10px;
+    background: #eee;
+    border-top: 1px solid #000;
+    font-size: 12px;
+}
+
+/* レスポンシブ対応（スマホで見るとき） */
+@media (max-width: 600px) {
+    .item {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+}
